@@ -222,3 +222,91 @@
     font-weight:500;
 
 }
+
+
+
+/* ===========================================
+   TABLET RESPONSIVE
+=========================================== */
+
+@media (max-width: 1024px) {
+
+  .hero {
+    height: auto;
+    min-height: 100vh;
+    padding-top: 80px;
+  }
+
+  .hero-overlay {
+    height: auto;
+    padding: 80px 0 140px;
+  }
+
+  .hero-title {
+    font-size: 58px;
+    letter-spacing: 2px;
+  }
+
+  .hero-subtitle {
+    font-size: 40px;
+    letter-spacing: 8px;
+  }
+
+  .hero-description {
+    font-size: 22px;
+    padding: 0 20px;
+  }
+
+  .hero-tagline {
+    font-size: 13px;
+    letter-spacing: 3px;
+  }
+
+  .hero-buttons {
+    gap: 16px;
+  }
+
+  .btn-primary,
+  .btn-secondary {
+    padding: 14px 28px;
+    font-size: 15px;
+  }
+
+  .activity-strip ul {
+    flex-wrap: wrap;
+    gap: 18px;
+    padding: 18px;
+  }
+
+  .activity-strip li {
+    font-size: 15px;
+  }
+
+}
+
+
+@media (max-width: 480px) {
+
+  .hero-title {
+    font-size: 30px;
+  }
+
+  .hero-subtitle {
+    font-size: 22px;
+    letter-spacing: 4px;
+  }
+
+  .hero-description {
+    font-size: 16px;
+  }
+
+  .hero-tagline {
+    font-size: 10px;
+    letter-spacing: 1px;
+  }
+
+  .activity-strip ul {
+    grid-template-columns: 1fr;
+  }
+
+}

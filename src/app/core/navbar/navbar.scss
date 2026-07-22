@@ -188,24 +188,80 @@
 
 }
 
-@media(max-width:992px){
+/* ===========================
+   Tablet
+=========================== */
 
-    .nav-links{
+@media (max-width: 992px) {
 
-        display:none;
+  .navbar {
+    padding: 16px 0;
+  }
 
-    }
+  .container {
+    width: 92%;
+  }
 
-    .register-btn{
+  .logo {
+    font-size: 24px;
+  }
 
-        display:none;
+  .nav-links,
+  .register-btn {
+    display: none;
+  }
 
-    }
+  .menu-btn {
+    display: block;
+    font-size: 34px;
+  }
 
-    .menu-btn{
+  .mobile-menu {
+    top: 72px;
+  }
 
-        display:block;
+}
 
-    }
+/* ===========================
+   Mobile
+=========================== */
+
+@media (max-width: 576px) {
+
+  .navbar {
+    padding: 14px 0;
+  }
+
+  .container {
+    width: 94%;
+  }
+
+  .logo {
+    font-size: 18px;
+  }
+
+  .menu-btn {
+    font-size: 30px;
+  }
+
+  .mobile-menu {
+
+    top: 65px;
+
+    padding: 25px 20px;
+
+    gap: 22px;
+
+  }
+
+  .mobile-menu a {
+
+    font-size: 17px;
+
+    padding-bottom: 12px;
+
+    border-bottom: 1px solid rgba(255,255,255,.08);
+
+  }
 
 }
