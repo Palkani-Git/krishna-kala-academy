@@ -8,16 +8,21 @@ import { Component } from '@angular/core';
 })
 export class FooterComponent {
 
-  links=[
+ links = [
 
-    'Home',
-    'About',
-    'Activities',
-    'Events',
-    'Registration',
-    'Contact'
+  { label: 'Home', link: '#home' },
 
-  ];
+  { label: 'About', link: '#about' },
+
+  { label: 'Activities', link: '#activities' },
+
+  { label: 'Events', link: '#events' },
+
+  { label: 'Registration', link: '#registration' },
+
+  { label: 'Contact', link: '#contact' }
+
+];
 
   activities=[
 

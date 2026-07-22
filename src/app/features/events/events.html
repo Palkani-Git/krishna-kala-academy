@@ -1,0 +1,227 @@
+<section
+class="events-section"
+id="events">
+
+    <div class="container">
+
+        <!-- =========================
+                Heading
+        ========================== -->
+
+        <div class="section-title">
+
+            <h2>
+
+                Events
+
+            </h2>
+
+            <div class="divider"></div>
+
+            <p>
+
+                Celebrate art, culture and devotion with our academy community.
+
+            </p>
+
+        </div>
+
+        <!-- =========================
+                Tabs
+        ========================== -->
+
+        <div class="event-tabs">
+
+            <button
+
+                [class.active]="selectedTab==='upcoming'"
+
+                (click)="changeTab('upcoming')">
+
+                Upcoming Events
+
+            </button>
+
+            <button
+
+                [class.active]="selectedTab==='gallery'"
+
+                (click)="changeTab('gallery')">
+
+                Gallery
+
+            </button>
+
+            <button
+
+                [class.active]="selectedTab==='past'"
+
+                (click)="changeTab('past')">
+
+                Past Events
+
+            </button>
+
+        </div>
+
+        <!-- =========================
+            Upcoming Events
+        ========================== -->
+
+        @if(selectedTab === 'upcoming'){
+
+        <div class="row justify-content-center g-4">
+
+            @for(event of upcomingEvents;track event.title){
+
+            <div class="col-lg-4 col-md-6">
+
+                <article class="event-card">
+
+                    <img
+
+                    [src]="event.image"
+
+                    [alt]="event.title">
+
+                    <div class="event-content">
+
+                        <div class="event-meta">
+
+                            <span class="date">
+
+                                {{event.date}}
+
+                            </span>
+
+                            <span class="time">
+
+                                🕒 {{event.time}}
+
+                            </span>
+
+                        </div>
+
+                        <h3>
+
+                            {{event.title}}
+
+                        </h3>
+
+                        <p>
+
+                            {{event.description}}
+
+                        </p>
+
+                        <small>
+
+                            📍 {{event.location}}
+
+                        </small>
+
+                    </div>
+
+                </article>
+
+            </div>
+
+            }
+
+        </div>
+
+        }
+
+        <!-- =========================
+                Gallery
+        ========================== -->
+
+        @if(selectedTab === 'gallery'){
+
+        <div class="row justify-content-center g-4">
+
+          <div class="gallery-grid">
+
+  @for(image of galleryImages; track image.image){
+
+    <div class="gallery-item">
+
+      <img
+        [src]="image.image"
+        [alt]="image.title">
+
+    </div>
+
+  }
+
+</div>
+
+        </div>
+
+        }
+
+        <!-- =========================
+                Past Events
+        ========================== -->
+
+        @if(selectedTab === 'past'){
+
+        <div class="row justify-content-center g-4">
+
+            @for(event of pastEvents;track event.title){
+
+            <div class="col-lg-4 col-md-6">
+
+                <article class="event-card">
+
+                    <img
+
+                    [src]="event.image"
+
+                    [alt]="event.title">
+
+                    <div class="event-content">
+
+                        <div class="event-meta">
+
+                            <span class="completed">
+
+                                Completed
+
+                            </span>
+
+                        </div>
+
+                        <h3>
+
+                            {{event.title}}
+
+                        </h3>
+
+                        <p>
+
+                            {{event.description}}
+
+                        </p>
+
+                        <small>
+
+                            📍 {{event.location}}
+
+                        </small>
+
+                    </div>
+
+                </article>
+
+            </div>
+
+            }
+
+        </div>
+
+        }
+
+    </div>
+
+</section>

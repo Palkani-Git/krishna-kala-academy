@@ -1,0 +1,415 @@
+.registration-section {
+
+    padding: 110px 0;
+
+    background: #234A98;
+
+}
+
+.container {
+
+    width: min(900px, 90%);
+
+    margin: auto;
+
+}
+
+/* ==========================================
+            Section Heading
+========================================== */
+
+.section-title {
+
+    text-align: center;
+
+    margin-bottom: 60px;
+
+}
+
+.section-title h2 {
+
+    font-family: "Cinzel", serif;
+
+    font-size: 52px;
+
+    color: #D4AF37;
+
+    text-transform: uppercase;
+
+    margin-bottom: 15px;
+
+}
+
+.section-title p {
+
+    color: #ffffff;
+
+    font-size: 18px;
+
+    margin-top: 20px;
+
+}
+
+/* Divider */
+
+.divider {
+
+    width: 120px;
+
+    height: 2px;
+
+    background: #D4AF37;
+
+    margin: auto;
+
+    position: relative;
+
+}
+
+.divider::before {
+
+    content: "";
+
+    width: 8px;
+
+    height: 8px;
+
+    background: #D4AF37;
+
+    border-radius: 50%;
+
+    position: absolute;
+
+    left: 50%;
+
+    top: 50%;
+
+    transform: translate(-50%, -50%);
+
+}
+
+/* ==========================================
+            Registration Card
+========================================== */
+
+.registration-card {
+
+    background: #1F4287;
+
+    border: 1px solid rgba(255,255,255,.08);
+
+    border-radius: 16px;
+
+    padding: 45px;
+
+    box-shadow: 0 15px 35px rgba(0,0,0,.18);
+
+}
+
+/* ==========================================
+                Labels
+========================================== */
+
+.registration-card label {
+
+    display: block;
+
+    color: #D4AF37;
+
+    font-weight: 600;
+
+    margin-bottom: 10px;
+
+    font-size: 15px;
+
+}
+
+/* ==========================================
+        Input | Select | Textarea
+========================================== */
+
+.registration-card input,
+
+.registration-card select,
+
+.registration-card textarea {
+
+    width: 100%;
+
+    background: #17387A;
+
+    border: 1px solid rgba(255,255,255,.12);
+
+    color: white;
+
+    border-radius: 8px;
+
+    padding: 14px 16px;
+
+    outline: none;
+
+    transition: .3s;
+
+    font-size: 15px;
+
+}
+
+/* Placeholder */
+
+.registration-card input::placeholder,
+
+.registration-card textarea::placeholder {
+
+    color: rgba(255,255,255,.45);
+
+}
+
+/* Focus */
+
+.registration-card input:focus,
+
+.registration-card textarea:focus,
+
+.registration-card select:focus {
+
+    border-color: #D4AF37;
+
+    box-shadow: 0 0 0 3px rgba(212,175,55,.15);
+
+}
+
+/* Textarea */
+
+.registration-card textarea {
+
+    resize: vertical;
+
+    min-height: 120px;
+
+}
+
+/* Select */
+
+.registration-card select {
+
+    cursor: pointer;
+
+}
+
+/* ==========================================
+                Button
+========================================== */
+
+.register-btn {
+
+    background: #D4AF37;
+
+    color: #0B1F4D;
+
+    border: none;
+
+    padding: 15px 40px;
+
+    border-radius: 10px;
+
+    font-size: 16px;
+
+    font-weight: 700;
+
+    transition: .35s;
+
+    cursor: pointer;
+
+}
+
+.register-btn:hover {
+
+    transform: translateY(-3px);
+
+    background: #EAC54F;
+
+    box-shadow: 0 10px 25px rgba(212,175,55,.35);
+
+}
+
+/* ==========================================
+            Validation
+========================================== */
+
+.error {
+
+    color: #ffb3b3;
+
+    font-size: 13px;
+
+    margin-top: 6px;
+
+}
+
+/* ==========================================
+            Responsive
+========================================== */
+
+@media (max-width:992px){
+
+    .registration-section{
+
+        padding:90px 0;
+
+    }
+
+    .registration-card{
+
+        padding:35px;
+
+    }
+
+}
+
+@media (max-width:768px){
+
+    .registration-section{
+
+        padding:70px 0;
+
+    }
+
+    .section-title h2{
+
+        font-size:40px;
+
+    }
+
+    .section-title p{
+
+        font-size:16px;
+
+    }
+
+    .registration-card{
+
+        padding:25px;
+
+    }
+
+    .register-btn{
+
+        width:100%;
+
+    }
+
+}
+
+
+
+
+@media (max-width:992px){
+
+.registration-section{
+
+    padding:80px 0;
+
+}
+
+.container{
+
+    width:92%;
+
+}
+
+.registration-card{
+
+    padding:35px;
+
+}
+
+.section-title h2{
+
+    font-size:42px;
+
+}
+
+.section-title p{
+
+    font-size:17px;
+
+}
+
+}
+
+
+@media (max-width:768px){
+
+.registration-section{
+
+    padding:70px 0;
+
+}
+
+.container{
+
+    width:95%;
+
+}
+
+.section-title{
+
+    margin-bottom:45px;
+
+}
+
+.section-title h2{
+
+    font-size:34px;
+
+}
+
+.section-title p{
+
+    font-size:15px;
+
+    line-height:1.7;
+
+}
+
+.registration-card{
+
+    padding:25px 20px;
+
+}
+
+.registration-card label{
+
+    font-size:14px;
+
+}
+
+.registration-card input,
+
+.registration-card select,
+
+.registration-card textarea{
+
+    padding:13px 14px;
+
+    font-size:15px;
+
+}
+
+.registration-card textarea{
+
+    min-height:100px;
+
+}
+
+.register-btn{
+
+    width:100%;
+
+    padding:15px;
+
+    font-size:16px;
+
+}
+
+}

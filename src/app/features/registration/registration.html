@@ -1,0 +1,201 @@
+<section
+class="registration-section"
+id="registration">
+
+    <div class="container">
+
+        <!-- =========================
+                Heading
+        ========================== -->
+
+        <div class="section-title">
+
+            <h2>
+
+                Registration
+
+            </h2>
+
+            <div class="divider"></div>
+
+            <p>
+
+                Begin your journey in the classical arts. Join our academy today.
+
+            </p>
+
+        </div>
+
+        <!-- =========================
+                Form
+        ========================== -->
+
+        <form
+
+            class="registration-card"
+
+            [formGroup]="registrationForm"
+
+            (ngSubmit)="submitRegistration()">
+
+            <div class="row g-4">
+
+                <!-- Candidate Name -->
+
+                <div class="col-md-6">
+
+                    <label>
+
+                        Candidate Name *
+
+                    </label>
+
+                    <input
+
+                        type="text"
+
+                        formControlName="candidateName"
+
+                        placeholder="Enter full name">
+
+                </div>
+
+                <!-- Mobile -->
+
+                <div class="col-md-6">
+
+                    <label>
+
+                        Mobile Number *
+
+                    </label>
+
+                    <input
+
+                        type="tel"
+
+                        formControlName="mobileNumber"
+
+                        placeholder="+91 98765 43210">
+
+                </div>
+
+                <!-- Email -->
+
+                <div class="col-md-6">
+
+                    <label>
+
+                        Email Address *
+
+                    </label>
+
+                    <input
+
+                        type="email"
+
+                        formControlName="email"
+
+                        placeholder="your@email.com">
+
+                </div>
+
+                <!-- Activity -->
+
+                <div class="col-md-6">
+
+                    <label>
+
+                        Activity *
+
+                    </label>
+
+                    <select
+
+                        formControlName="activity">
+
+                        <option value="">
+
+                            Select Activity
+
+                        </option>
+
+                        @for(activity of activities; track activity){
+
+                        <option [value]="activity">
+
+                            {{activity}}
+
+                        </option>
+
+                        }
+
+                    </select>
+
+                </div>
+
+                <!-- Address -->
+
+                <div class="col-12">
+
+                    <label>
+
+                        Address
+
+                    </label>
+
+                    <textarea
+
+                        rows="4"
+
+                        formControlName="address"
+
+                        placeholder="Enter your address">
+
+                    </textarea>
+
+                </div>
+
+                <!-- Notes -->
+
+                <div class="col-12">
+
+                    <label>
+
+                        Special Notes or Medical Conditions
+
+                    </label>
+
+                    <textarea
+
+                        rows="4"
+
+                        formControlName="notes"
+
+                        placeholder="Mention if any...">
+
+                    </textarea>
+
+                </div>
+
+                <!-- Submit -->
+
+                <div class="col-12">
+
+                    <button
+                        type="submit"
+                        class="register-btn">
+
+                        Register Now
+
+                    </button>
+
+                </div>
+
+            </div>
+
+        </form>
+
+    </div>
+
+</section>

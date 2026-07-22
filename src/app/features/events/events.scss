@@ -1,0 +1,477 @@
+/* ==========================================
+                Events Section
+========================================== */
+
+.events-section {
+
+    padding: 110px 0;
+
+    background: #234A98;
+
+}
+
+.container {
+
+    width: min(1320px, 90%);
+
+    margin: auto;
+
+}
+
+/* ==========================================
+              Section Heading
+========================================== */
+
+.section-title {
+
+    text-align: center;
+
+    margin-bottom: 55px;
+
+}
+
+.section-title h2 {
+
+    font-family: "Cinzel", serif;
+
+    font-size: 52px;
+
+    color: #D4AF37;
+
+    margin-bottom: 18px;
+
+    text-transform: uppercase;
+
+}
+
+.section-title p {
+
+    color: #ffffff;
+
+    font-size: 18px;
+
+}
+
+.divider {
+
+    width: 120px;
+
+    height: 2px;
+
+    background: #D4AF37;
+
+    margin: 20px auto;
+
+    position: relative;
+
+}
+
+.divider::before {
+
+    content: "";
+
+    position: absolute;
+
+    width: 8px;
+
+    height: 8px;
+
+    background: #D4AF37;
+
+    border-radius: 50%;
+
+    left: 50%;
+
+    top: 50%;
+
+    transform: translate(-50%, -50%);
+
+}
+
+/* ==========================================
+                Tabs
+========================================== */
+
+.event-tabs {
+
+    display: flex;
+
+    justify-content: center;
+
+    margin-bottom: 55px;
+
+}
+
+.event-tabs button {
+
+    background: transparent;
+
+    color: #ffffff;
+
+    border: 1px solid #D4AF37;
+
+    padding: 14px 34px;
+
+    cursor: pointer;
+
+    transition: .35s;
+
+    font-weight: 600;
+
+}
+
+.event-tabs button:first-child {
+
+    border-radius: 8px 0 0 8px;
+
+}
+
+.event-tabs button:last-child {
+
+    border-radius: 0 8px 8px 0;
+
+}
+
+.event-tabs button.active {
+
+    background: #D4AF37;
+
+    color: #0B1F4D;
+
+}
+
+.event-tabs button:hover {
+
+    background: #D4AF37;
+
+    color: #0B1F4D;
+
+}
+
+/* ==========================================
+                Event Card
+========================================== */
+
+.event-card {
+
+    background: #1F4287;
+
+    border-radius: 14px;
+
+    overflow: hidden;
+
+    border: 1px solid rgba(255,255,255,.08);
+
+    transition: .35s;
+
+    height: 100%;
+
+    display: flex;
+
+    flex-direction: column;
+
+}
+
+.event-card:hover {
+
+    transform: translateY(-8px);
+
+    box-shadow: 0 18px 40px rgba(0,0,0,.25);
+
+}
+
+/* ==========================================
+                Image
+========================================== */
+
+.event-card img {
+
+    width: 100%;
+
+    height: 230px;
+
+    object-fit: cover;
+
+    transition: .5s;
+
+}
+
+.event-card:hover img {
+
+    transform: scale(1.08);
+
+}
+
+/* ==========================================
+                Content
+========================================== */
+
+.event-content {
+
+    padding: 24px;
+
+    display: flex;
+
+    flex-direction: column;
+
+    flex: 1;
+
+}
+
+.event-meta {
+
+    display: flex;
+
+    justify-content: space-between;
+
+    align-items: center;
+
+    margin-bottom: 18px;
+
+    flex-wrap: wrap;
+
+}
+
+.date {
+
+    background: #D4AF37;
+
+    color: #0B1F4D;
+
+    padding: 5px 12px;
+
+    border-radius: 4px;
+
+    font-size: 13px;
+
+    font-weight: 600;
+
+}
+
+.time {
+
+    color: #D8D8D8;
+
+    font-size: 14px;
+
+}
+
+.completed {
+
+    background: #198754;
+
+    color: #ffffff;
+
+    padding: 6px 14px;
+
+    border-radius: 4px;
+
+    font-size: 13px;
+
+    font-weight: 600;
+
+}
+
+.event-content h3 {
+
+    color: #ffffff;
+
+    font-family: "Cinzel", serif;
+
+    font-size: 26px;
+
+    line-height: 1.5;
+
+    margin-bottom: 16px;
+
+}
+
+.event-content p {
+
+    color: #ffffff;
+
+    line-height: 1.8;
+
+    flex: 1;
+
+}
+
+.event-content small {
+
+    color: #D4AF37;
+
+    margin-top: 20px;
+
+    display: block;
+
+    font-size: 15px;
+
+}
+
+/* ==========================================
+                Gallery
+========================================== */
+
+.gallery-card {
+
+    border-radius: 14px;
+
+    overflow: hidden;
+
+    cursor: pointer;
+
+    transition: .35s;
+
+}
+
+.gallery-card img {
+
+    width: 100%;
+
+    height: 260px;
+
+    object-fit: cover;
+
+    transition: .5s;
+
+}
+
+.gallery-card:hover {
+
+    transform: translateY(-6px);
+
+}
+
+.gallery-card:hover img {
+
+    transform: scale(1.08);
+
+}
+
+.gallery-grid{
+
+    display:grid;
+
+    grid-template-columns:repeat(3,1fr);
+
+    grid-auto-rows:120px;
+
+    gap:18px;
+
+}
+
+.gallery-item{
+
+    overflow:hidden;
+
+    border-radius:14px;
+
+}
+
+.gallery-item img{
+
+    width:100%;
+
+    height:100%;
+
+    object-fit:cover;
+
+}
+
+.gallery-item:nth-child(1){
+
+    grid-row:span 3;
+
+}
+
+.gallery-item:nth-child(2){
+
+    grid-row:span 2;
+
+}
+
+.gallery-item:nth-child(3){
+
+    grid-row:span 2;
+
+}
+
+.gallery-item:nth-child(4){
+
+    grid-row:span 3;
+
+}
+
+.gallery-item:nth-child(5){
+
+    grid-row:span 2;
+
+}
+
+.gallery-item:nth-child(6){
+
+    grid-row:span 2;
+
+}
+
+/* ==========================================
+              Responsive
+========================================== */
+
+@media (max-width:991px){
+
+    .events-section{
+
+        padding:80px 0;
+
+    }
+
+    .event-tabs{
+
+        flex-wrap: wrap;
+
+        gap:12px;
+
+    }
+
+    .event-tabs button{
+
+        border-radius:8px !important;
+
+    }
+
+}
+
+@media (max-width:767px){
+
+    .section-title h2{
+
+        font-size:38px;
+
+    }
+
+    .section-title p{
+
+        font-size:16px;
+
+    }
+
+    .event-card img{
+
+        height:220px;
+
+    }
+
+    .gallery-card img{
+
+        height:220px;
+
+    }
+
+    .event-content h3{
+
+        font-size:22px;
+
+    }
+
+}
