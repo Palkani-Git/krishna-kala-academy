@@ -1,0 +1,211 @@
+.navbar {
+
+    position: fixed;
+    top: 0;
+    left: 0;
+
+    width: 100%;
+
+    z-index: 999;
+
+    padding: 22px 0;
+
+    transition: .35s ease;
+
+    background: transparent;
+
+}
+
+.navbar.scrolled {
+
+    background: #0B1F4D;
+
+    box-shadow: 0 10px 30px rgba(0,0,0,.15);
+
+    padding: 15px 0;
+
+}
+
+.container{
+
+    width: 90%;
+
+    max-width: 1320px;
+
+    margin: auto;
+
+    display: flex;
+
+    justify-content: space-between;
+
+    align-items: center;
+
+}
+
+.logo{
+
+    color: white;
+
+    font-size: 28px;
+
+    font-weight: 700;
+
+    text-decoration: none;
+
+    font-family: "Cinzel", serif;
+
+}
+
+.nav-links{
+
+    display:flex;
+
+    align-items:center;
+
+    gap:35px;
+
+}
+
+.nav-links a{
+
+    text-decoration:none;
+
+    color:white;
+
+    font-size:16px;
+
+    font-weight:500;
+
+    position:relative;
+
+    transition:.3s;
+
+}
+
+.nav-links a::after{
+
+    content:'';
+
+    position:absolute;
+
+    left:0;
+
+    bottom:-6px;
+
+    width:0;
+
+    height:2px;
+
+    background:#D4AF37;
+
+    transition:.3s;
+
+}
+
+.nav-links a:hover{
+
+    color:#D4AF37;
+
+}
+
+.nav-links a:hover::after{
+
+    width:100%;
+
+}
+
+.register-btn{
+
+    background:#D4AF37;
+
+    color:#0B1F4D;
+
+    text-decoration:none;
+
+    padding:12px 28px;
+
+    border-radius:40px;
+
+    font-weight:600;
+
+    transition:.3s;
+
+}
+
+.register-btn:hover{
+
+    transform:translateY(-2px);
+
+}
+
+.menu-btn{
+
+    display:none;
+
+    border:none;
+
+    background:none;
+
+    color:white;
+
+    font-size:32px;
+
+    cursor:pointer;
+
+}
+
+.mobile-menu{
+
+    position:fixed;
+
+    top:80px;
+
+    left:0;
+
+    width:100%;
+
+    background:#0B1F4D;
+
+    display:flex;
+
+    flex-direction:column;
+
+    padding:20px;
+
+    gap:18px;
+
+    z-index:998;
+
+}
+
+.mobile-menu a{
+
+    color:white;
+
+    text-decoration:none;
+
+    font-size:18px;
+
+}
+
+@media(max-width:992px){
+
+    .nav-links{
+
+        display:none;
+
+    }
+
+    .register-btn{
+
+        display:none;
+
+    }
+
+    .menu-btn{
+
+        display:block;
+
+    }
+
+}

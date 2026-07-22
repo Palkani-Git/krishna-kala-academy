@@ -1,0 +1,68 @@
+<header class="navbar" [class.scrolled]="isScrolled()">
+
+    <div class="container">
+
+        <!-- Logo -->
+        <a href="#" class="logo">
+            Krishna Kala Academy
+        </a>
+
+        <!-- Desktop Menu -->
+        <nav class="nav-links">
+
+            @for(item of menuItems; track item.label){
+
+                <a [href]="item.link">
+                    {{item.label}}
+                </a>
+
+            }
+
+        </nav>
+
+        <!-- Register Button -->
+        <a href="#registration" class="register-btn">
+            Register Now
+        </a>
+
+        <!-- Mobile Menu -->
+
+        <button
+            class="menu-btn"
+            (click)="toggleMenu()">
+
+            @if(!isMenuOpen()){
+
+                ☰
+
+            }@else{
+
+                ✕
+
+            }
+
+        </button>
+
+    </div>
+
+</header>
+
+@if(isMenuOpen()){
+
+<div class="mobile-menu">
+
+    @for(item of menuItems; track item.label){
+
+        <a
+        [href]="item.link"
+        (click)="toggleMenu()">
+
+            {{item.label}}
+
+        </a>
+
+    }
+
+</div>
+
+}

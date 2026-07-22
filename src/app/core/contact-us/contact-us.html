@@ -1,0 +1,197 @@
+<section class="contact-section" id="contact">
+
+    <div class="container">
+
+        <!-- ================= Heading ================= -->
+
+        <div class="section-title">
+
+            <h2>Contact Us</h2>
+
+            <div class="divider"></div>
+
+            <p>
+
+                We are always happy to hear from you.
+                Reach us anytime.
+
+            </p>
+
+        </div>
+
+        <!-- ================= Main Grid ================= -->
+
+        <div class="row g-4">
+
+            <!-- LEFT SIDE -->
+
+            <div class="col-lg-6">
+
+                <!-- Contact Card -->
+
+                <div class="contact-card">
+
+                    <h3>Get In Touch</h3>
+
+                    <div class="contact-item">
+
+                        <i class="bi bi-geo-alt-fill"></i>
+
+                        <div>
+
+                            <h5>Address</h5>
+
+                            <p>
+                                47, Mylapore Main Road,
+                                Near Kapaleeshwarar Temple,
+                                Chennai - 600004
+                            </p>
+
+                        </div>
+
+                    </div>
+
+                    <div class="contact-item">
+
+                        <i class="bi bi-telephone-fill"></i>
+
+                        <div>
+
+                            <h5>Phone</h5>
+
+                            <p>
+
+                                +91 44 2461 8800
+
+                                <br>
+
+                                +91 98400 12345
+
+                            </p>
+
+                        </div>
+
+                    </div>
+
+                    <div class="contact-item">
+
+                        <i class="bi bi-envelope-fill"></i>
+
+                        <div>
+
+                            <h5>Email</h5>
+
+                            <p>
+
+                                info@krishnakalaacademy.in
+
+                            </p>
+
+                        </div>
+
+                    </div>
+
+                    <div class="contact-item">
+
+                        <i class="bi bi-clock-fill"></i>
+
+                        <div>
+
+                            <h5>Office Hours</h5>
+
+                            <p>
+
+                                Monday - Saturday
+
+                                <br>
+
+                                9:00 AM - 7:00 PM
+
+                            </p>
+
+                        </div>
+
+                        
+
+                    </div>
+
+                    <div class="quote-card">
+
+    <i class="bi bi-quote"></i>
+
+    <p>
+
+        "Where Devotion Meets Discipline,
+        Every Step Becomes a Prayer.
+        Every movement tells a story,
+         Every rhythm awakens the soul."
+
+    </p>
+
+</div>  
+
+                </div>
+            </div>
+
+            <!-- RIGHT SIDE -->
+
+            <div class="col-lg-6">
+
+                <!-- Google Map -->
+
+                <div class="map-card">
+
+                    <iframe
+                        src="https://www.google.com/maps?q=Mylapore,Chennai&output=embed"
+                        loading="lazy">
+                    </iframe>
+
+                </div>
+
+                <!-- Form -->
+
+                <div class="form-card">
+
+                    <h3>Send A Message</h3>
+
+                    <form
+                        [formGroup]="contactForm"
+                        (ngSubmit)="submitForm()">
+
+                        <input
+                            type="text"
+                            placeholder="Your Name"
+                            formControlName="name">
+
+                        <input
+                            type="email"
+                            placeholder="Your Email Address"
+                            formControlName="email">
+
+                        <textarea
+
+                            rows="5"
+
+                            placeholder="Your Message"
+
+                            formControlName="message">
+
+                        </textarea>
+
+                        <button type="submit">
+
+                            Send Message
+
+                        </button>
+
+                    </form>
+
+                </div>
+
+            </div>
+
+        </div>
+
+    </div>
+
+</section>

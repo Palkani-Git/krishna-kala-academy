@@ -1,0 +1,224 @@
+.hero {
+
+    position: relative;
+    height: 105vh;
+    padding-top: 50px;
+    box-sizing: border-box;
+    background:
+        linear-gradient(
+            rgba(10,22,40,.65),
+            rgba(18,42,92,.55),
+            rgba(10,22,40,.80)
+        ),
+        url('/assets/images/bharatham-2.png');
+
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+
+}
+
+.hero-overlay{
+
+    display:flex;
+
+    justify-content:center;
+
+    align-items:center;
+
+    height:calc(100vh - 70px);
+
+}
+
+.container{
+
+    width:min(1320px,90%);
+
+    margin:auto;
+
+}
+
+.hero-content{
+
+    text-align:center;
+
+    color:white;
+
+}
+
+.om-symbol{
+
+    display:block;
+
+    font-size:52px;
+
+    color:#D4AF37;
+
+    margin-bottom:15px;
+
+}
+
+.hero-title{
+
+    font-family:"Cinzel",serif;
+      text-shadow:
+        0 3px 20px rgba(0,0,0,.35); 
+    font-size:78px;
+
+    letter-spacing:4px;
+
+    margin:0;
+
+    font-weight:700;
+
+}
+
+.hero-subtitle{
+
+    margin-top:10px;
+
+    color:#D4AF37;
+
+    font-family:"Cinzel",serif;
+
+    font-size:54px;
+
+    letter-spacing:12px;
+
+    font-weight:500;
+
+}
+
+.divider{
+
+    width:120px;
+
+    height:2px;
+
+    background:#D4AF37;
+
+    margin:28px auto;
+
+}
+
+.hero-description{
+
+    font-size:26px;
+
+    margin-bottom:18px;
+
+    font-weight:400;
+
+}
+
+.hero-tagline{
+
+    display:block;
+
+    color:#D4AF37;
+
+    letter-spacing:5px;
+
+    margin-bottom:45px;
+
+    font-size:14px;
+
+}
+
+.hero-buttons{
+
+    display:flex;
+
+    justify-content:center;
+
+    gap:20px;
+
+}
+
+.btn-primary{
+
+    background:#D4AF37;
+
+    color:#0B1F4D;
+
+    padding:16px 38px;
+
+    text-decoration:none;
+
+    border-radius:8px;
+
+    font-weight:600;
+
+    transition:.3s;
+
+}
+
+.btn-primary:hover{
+
+    transform:translateY(-2px);
+
+}
+
+.btn-secondary{
+
+    border:1px solid white;
+
+    color:white;
+
+    text-decoration:none;
+
+    padding:16px 38px;
+
+    border-radius:8px;
+
+    transition:.3s;
+
+}
+
+.btn-secondary:hover{
+
+    background:white;
+
+    color:#0B1F4D;
+
+}
+
+.activity-strip{
+
+    position:absolute;
+
+    bottom:0;
+
+    left:0;
+
+    width:100%;
+
+    background:#122B63;
+
+    border-top:1px solid rgba(255,255,255,.12);
+
+}
+
+.activity-strip ul{
+
+    list-style:none;
+
+    display:flex;
+
+    justify-content:space-around;
+
+    align-items:center;
+
+    margin:0;
+
+    padding:22px 0;
+
+}
+
+.activity-strip li{
+
+    color:white;
+
+    font-weight:500;
+
+}

@@ -1,0 +1,89 @@
+<section
+class="activities-section"
+id="activities">
+
+    <div class="container">
+
+        <!-- ================= Heading ================= -->
+
+        <div class="section-title">
+
+            <h2>
+
+                Our Activities
+
+            </h2>
+
+            <div class="divider"></div>
+
+            <p>
+
+                Ancient arts, timeless wisdom — taught with care and devotion.
+
+            </p>
+
+        </div>
+
+        <!-- ================= Cards ================= -->
+
+        <div class="row justify-content-center g-4">
+
+            @for(activity of activities;track activity.title){
+
+            <div class="col-lg-4 col-md-6">
+
+                <article class="activity-card">
+
+                    <!-- Image -->
+
+                    <div class="activity-image">
+
+                        <img
+
+                        [src]="activity.image"
+
+                        [alt]="activity.title">
+
+                    </div>
+
+                    <!-- Content -->
+
+                    <div class="activity-content">
+
+                        <h3>
+
+                            {{activity.title}}
+
+                        </h3>
+
+                        <p>
+
+                            {{activity.description}}
+
+                        </p>
+
+                        <button>
+
+                            {{activity.buttonText}}
+
+                            <span>
+
+                                →
+
+                            </span>
+
+                        </button>
+
+                    </div>
+
+                </article>
+
+            </div>
+
+            }
+
+        </div>
+
+    </div>
+
+</section>
