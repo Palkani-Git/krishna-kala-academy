@@ -30,60 +30,116 @@ export class EventsComponent {
 
   }
 
+  // upcomingEvents: IEventCard[] = [
+
+  //   {
+
+  //     image: 'assets/images/bharatham-1.png',
+
+  //     title: 'Independence Day Cultural Celebration',
+
+  //     description:
+  //       'A grand showcase of Bharatanatyam, Silambam and folk performances by our students.',
+
+  //     date: 'Aug 15, 2026',
+
+  //     time: '6:00 PM',
+
+  //     location: 'Narada Gana Sabha, Chennai'
+
+  //   },
+
+  //   {
+
+  //     image: 'assets/images/bharatham-2.png',
+
+  //     title: 'Janmashtami Bhajan Sandhya',
+
+  //     description:
+  //       'An evening of Krishna Bhajans and devotional music celebrating Lord Krishna.',
+
+  //     date: 'Sep 7, 2026',
+
+  //     time: '7:30 PM',
+
+  //     location: 'Sri Krishna Educational Academy & Visakha\'s Fine Arts Auditorium'
+
+  //   },
+
+  //   {
+
+  //     image: 'assets/images/pajanai-image.png',
+
+  //     title: 'Navaratri Arangetram 2026',
+
+  //     description:
+  //       'Special Bharatanatyam Arangetram by advanced students with live orchestra.',
+
+  //     date: 'Oct 3, 2026',
+
+  //     time: '5:30 PM',
+
+  //     location: 'Museum Theatre, Chennai'
+
+  //   }
+
+  // ];
+
+
   upcomingEvents: IEventCard[] = [
 
-    {
+  {
 
-      image: 'assets/images/bharatham-1.png',
+    image: 'assets/images/day-1.png',
 
-      title: 'Independence Day Cultural Celebration',
+    title: 'Sri Krishna Janmashtami Mahotsavam',
 
-      description:
-        'A grand showcase of Bharatanatyam, Silambam and folk performances by our students.',
+    description:
+      'Join us for the 24th Year Sri Krishna Janmashtami Mahotsavam with the sacred Milk Pot Procession Festival and devotional celebrations.',
 
-      date: 'Aug 15, 2026',
+    date: 'Sep 4, 2026',
 
-      time: '6:00 PM',
+    time: '5:00 PM',
 
-      location: 'Narada Gana Sabha, Chennai'
+    location: 'Hare Krishna Temple, Avadi, Chennai'
 
-    },
+  },
 
-    {
+  {
 
-      image: 'assets/images/bharatham-2.png',
+    image: 'assets/images/day-2.png',
 
-      title: 'Janmashtami Bhajan Sandhya',
+    title: 'Sri Sri Gaura Nitai Alankaram & Garuda Vahana Procession',
 
-      description:
-        'An evening of Krishna Bhajans and devotional music celebrating Lord Krishna.',
+    description:
+      'Witness the divine alankaram of Sri Sri Gaura Nitai and the grand Garuda Vahana Procession with devotional bhajans and spiritual celebrations.',
 
-      date: 'Sep 7, 2026',
+    date: 'Sep 5, 2026',
 
-      time: '7:30 PM',
+    time: '5:00 PM',
 
-      location: 'Sri Krishna Educational Academy & Visakha\'s Fine Arts Auditorium'
+    location: 'Hare Krishna Temple, Avadi, Chennai'
 
-    },
+  },
 
-    {
+  {
 
-      image: 'assets/images/pajanai-image.png',
+    image: 'assets/images/janmashtami-poster.png',
 
-      title: 'Navaratri Arangetram 2026',
+    title: 'Sri Krishna Janmashtami 2026 Celebrations',
 
-      description:
-        'Special Bharatanatyam Arangetram by advanced students with live orchestra.',
+    description:
+      'Celebrate the auspicious Sri Krishna Janmashtami with cultural performances, devotional music, temple procession and special darshan for devotees.',
 
-      date: 'Oct 3, 2026',
+    date: 'Sep 27, 2026',
 
-      time: '5:30 PM',
+    time: 'From 5:00 PM',
 
-      location: 'Museum Theatre, Chennai'
+    location: 'Hare Krishna Temple, Avadi, Chennai'
 
-    }
+  }
 
-  ];
+];
 
   galleryImages: IGalleryImage[] = [
 

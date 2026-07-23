@@ -69,18 +69,18 @@ export class ActivitiesComponent {
 
     },
 
-    {
+   {
 
-      title: 'Classical Dance',
+  title: 'Vocal & Instruments',
 
-      image: 'assets/images/dance-image.png',
+  image: 'assets/images/vocal-instruments.png',
 
-      description:
-      "Explore Indian classical dance traditions with graceful movements, rhythm training and expressive storytelling.",
+  description:
+  "Learn Carnatic Vocal and master classical instruments including Veena, Keyboard, Guitar, Tabla and Drums under expert guidance. Develop melody, rhythm, confidence and stage performance skills in a traditional learning environment.",
 
-      buttonText: 'Learn More'
+  buttonText: 'Learn More'
 
-    }
+}
 
   ];
 
