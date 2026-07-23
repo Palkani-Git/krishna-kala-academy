@@ -42,9 +42,13 @@
                             <h5>Address</h5>
 
                             <p>
-                                47, Mylapore Main Road,
-                                Near Kapaleeshwarar Temple,
-                                Chennai - 600004
+
+                                164/1, Chinnamman Kovil Street,
+                                <br>
+                                Avadi,
+                                <br>
+                                Chennai - 600054
+
                             </p>
 
                         </div>
@@ -57,15 +61,15 @@
 
                         <div>
 
-                            <h5>Phone</h5>
+                            <h5>Phone & WhatsApp</h5>
 
                             <p>
 
-                                +91 44 2461 8800
+                                <a href="tel:+916369281272" style="color: white;">
 
-                                <br>
+                                    +91 63692 81272
 
-                                +91 98400 12345
+                                </a>
 
                             </p>
 
@@ -83,7 +87,11 @@
 
                             <p>
 
-                                info@krishnakalaacademy.in
+                                <a href="mailto:gayathriveera753@gmail.com" style="color: white;">
+
+                                    gayathriveera753@gmail.com
+
+                                </a>
 
                             </p>
 
@@ -111,24 +119,22 @@
 
                         </div>
 
-                        
-
                     </div>
 
                     <div class="quote-card">
 
-    <i class="bi bi-quote"></i>
+                        <i class="bi bi-quote"></i>
 
-    <p>
+                        <p>
 
-        "Where Devotion Meets Discipline,
-        Every Step Becomes a Prayer.
-        Every movement tells a story,
-         Every rhythm awakens the soul."
+                            "Where Devotion Meets Discipline,
+                            Every Step Becomes a Prayer.
+                            Every movement tells a story,
+                            Every rhythm awakens the soul."
 
-    </p>
+                        </p>
 
-</div>  
+                    </div>
 
                 </div>
             </div>
@@ -139,12 +145,26 @@
 
                 <!-- Google Map -->
 
+                <!-- <div class="map-card">
+
+                    <iframe src="https://www.google.com/maps?q=Mylapore,Chennai&output=embed" loading="lazy">
+                    </iframe>
+
+                </div> -->
+
                 <div class="map-card">
 
-                    <iframe
-                        src="https://www.google.com/maps?q=Mylapore,Chennai&output=embed"
-                        loading="lazy">
+                    <iframe src="https://www.google.com/maps?q=Avadi,Chennai&output=embed" loading="lazy">
                     </iframe>
+
+                    <a href="https://share.google/pojPQNoFaUr2nBbvV" target="_blank" rel="noopener noreferrer"
+                        class="map-btn">
+
+                        <i class="bi bi-geo-alt-fill"></i>
+
+                        Open in Google Maps
+
+                    </a>
 
                 </div>
 
@@ -154,27 +174,13 @@
 
                     <h3>Send A Message</h3>
 
-                    <form
-                        [formGroup]="contactForm"
-                        (ngSubmit)="submitForm()">
+                    <form [formGroup]="contactForm" (ngSubmit)="submitForm()">
 
-                        <input
-                            type="text"
-                            placeholder="Your Name"
-                            formControlName="name">
+                        <input type="text" placeholder="Your Name" formControlName="name">
 
-                        <input
-                            type="email"
-                            placeholder="Your Email Address"
-                            formControlName="email">
+                        <input type="email" placeholder="Your Email Address" formControlName="email">
 
-                        <textarea
-
-                            rows="5"
-
-                            placeholder="Your Message"
-
-                            formControlName="message">
+                        <textarea rows="5" placeholder="Your Message" formControlName="message">
 
                         </textarea>
 

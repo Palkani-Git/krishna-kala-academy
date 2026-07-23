@@ -62,7 +62,7 @@ export class EventsComponent {
 
       time: '7:30 PM',
 
-      location: 'Krishna Kala Academy Auditorium'
+      location: 'Sri Krishna Educational Academy & Visakha\'s Fine Arts Auditorium'
 
     },
 

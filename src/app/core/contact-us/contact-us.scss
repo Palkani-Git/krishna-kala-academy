@@ -461,3 +461,39 @@
     }
 
 }
+
+.map-btn{
+
+    display:flex;
+
+    justify-content:center;
+
+    align-items:center;
+
+    gap:8px;
+
+    margin-top:15px;
+
+    background:#D4AF37;
+
+    color:#0B1F4D;
+
+    text-decoration:none;
+
+    padding:14px;
+
+    border-radius:8px;
+
+    font-weight:600;
+
+    transition:.3s;
+
+}
+
+.map-btn:hover{
+
+    background:#c59d24;
+
+    transform:translateY(-2px);
+
+}

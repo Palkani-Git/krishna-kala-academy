@@ -42,17 +42,103 @@
 
 }
 
+// .logo{
+
+//     color: white;
+
+//     font-size: 28px;
+
+//     font-weight: 700;
+
+//     text-decoration: none;
+
+//     font-family: "Cinzel", serif;
+
+// }
+
 .logo{
 
-    color: white;
+    display:flex;
 
-    font-size: 28px;
+    align-items:center;
 
-    font-weight: 700;
+    gap:14px;
 
-    text-decoration: none;
+    text-decoration:none;
 
-    font-family: "Cinzel", serif;
+}
+
+/* Logo Image */
+
+.logo-img{
+
+    width:58px;
+
+    height:58px;
+
+    object-fit:contain;
+
+    border-radius:50%;
+
+}
+
+/* Logo Text */
+
+.logo-text{
+
+    display:flex;
+
+    flex-direction:column;
+
+    line-height:1.2;
+
+}
+
+.logo-main{
+
+    font-family:"Cinzel", serif;
+
+    font-size:26px;
+
+    font-weight:700;
+
+    color:#D4AF37;
+
+}
+
+.logo-sub{
+
+    color:white;
+
+    font-size:12px;
+
+    letter-spacing:2px;
+
+    text-transform:uppercase;
+
+}
+
+.logo-main{
+
+    font-family:"Cinzel", serif;
+
+    font-size:28px;
+
+    font-weight:700;
+
+    color:#D4AF37;
+
+}
+
+.logo-sub{
+
+    font-size:13px;
+
+    letter-spacing:2px;
+
+    text-transform:uppercase;
+
+    color:white;
 
 }
 

@@ -20,7 +20,7 @@ export class AboutUsComponent {
       icon: 'bi-bank',
       title: 'Our Academy',
       description:
-      'Founded in 2008 in Chennai, Krishna Kala Academy has nurtured over 2,000 students across generations. We are committed to preserving India classical art traditions in their purest form, passed down through lineages of great masters.'
+      'Founded in 2008 in Chennai, Sri Krishna Educational Academy & Visakha\'s Fine Arts has nurtured over 2,000 students across generations. We are committed to preserving India classical art traditions in their purest form, passed down through lineages of great masters.'
     },
 
     {
